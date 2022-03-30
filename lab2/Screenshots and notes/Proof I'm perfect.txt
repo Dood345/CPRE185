@@ -1,0 +1,7 @@
+Initially my biggest problem was not including any ; which caused me to think my declaration of the date string was incorrect. Beacuse of this I changed the date to a int in stead of string, didn't work, changed it back after realizing the real error.
+also chose to output section on accident, replaced that with course name
+I also had originally defined & intialized the variables outside of main. Upon moving them into main my name wound up with a weird character at the end of it."▒"
+
+for 2-2-2 I just coppied and changed variables
+
+mkdir to make a new folder?

@@ -1,0 +1,17 @@
+The requested calculations result in the following: 
+a = 8152 
+b = 27361080 
+c = 81.00 
+d = 33.73 
+e = 21 
+f = 2 
+g = 2.00 
+h = 21.00 
+i = 22.00 
+j = 2 
+k = 22.00 
+
+enter perimeter of circle:The solutions equations result in the following: 
+Area of a Circle of perimeter 23.567 = 44.198 
+14 Feet converted to Meeters = 4.27 m 
+76 degrees Farenheit in Celcius = 24.44 C 
