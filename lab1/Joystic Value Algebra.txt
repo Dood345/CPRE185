@@ -1,0 +1,16 @@
+x=joystics horizontal position
+y=joysticks vertical position
+
+
+Left Joystick Right: 127,0 fx = x/128
+Left Joystick Left: -128,0
+Left Joystick Up:    0,-128  fy = -y/128
+Left Joystick Down:  0,127
+
+
+Right Joystick Right: 127,0
+Right Joystick Left: -128,0
+Right Joystick Up:    0,-128
+Right Joystick Down:  0,127 
+
+256 = 127 + 128 + (numbers in zero)
