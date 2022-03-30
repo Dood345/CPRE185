@@ -1,0 +1,38 @@
+The complier did weird stuff and kept the program open in the BG when I pressed ctrl+z on it accidentally, looked like it had shut down the program but it had not.
+
+I found out that I had somehow created an infinte loop with:
+		if (close_enough(.25, -1, ay)) {
+			if (checkPosition(position)) {
+				printf("Bottom\n");
+			}
+			position = 2;
+		}
+and
+
+int checkPosition(int newPosition) {
+	if (newPosition == oldPosition) {
+		int oldPosition = 0;
+		return 1;
+	}
+	else if (newPosition != oldPosition) {
+		oldPosition = newPosition;
+		return 0;
+	}
+}
+
+which upon further review shouldn't of output anything
+
+wound up changing it to 
+
+int checkPosition(int newPosition) {
+	if (newPosition == oldPosition) {
+		return 0;
+	}
+	else if (newPosition != oldPosition) {
+		oldPosition = newPosition;
+		return 1;
+	}
+}
+
+and had to define int oldPosition = 0; outside of the function so that it would retain the previous value and not be reset each time the function is called. 
+Had some help from JT
